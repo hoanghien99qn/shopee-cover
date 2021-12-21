@@ -1,0 +1,51 @@
+.product-quantity-btn button {
+    font-size: 1.8rem;
+    background-color: #fff;
+    border: 1px solid rgb(182, 180, 180);
+    width: 30px;
+    height: 32px;
+    color: #555;
+    cursor: pointer;
+}
+
+button.product-btn-minus {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+}
+
+button.product-btn-plus {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left: none;
+}
+
+.product-input {
+    width: 50px;
+    color: #333;
+    height: 32px;
+    border: 1px solid rgb(182, 180, 180);
+
+    position: relative;
+    top: 2px;
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.product-input.inCart {
+    top: 1px;
+}
+
+/* Remove arrow on number input */
+/* Chrome, Safari, Edge, Opera */
+input.product-input::-webkit-outer-spin-button,
+input.product-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"].product-input {
+    -moz-appearance: textfield;
+}

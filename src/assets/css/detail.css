@@ -1,0 +1,139 @@
+.detail-product {
+    background-color: #fff;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-right {
+    padding: 24px;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.product-vote {
+    margin-top: 12px;
+}
+
+.product-vote i {
+    color: rgb(212, 211, 211);
+    font-size: 1.5rem;
+}
+
+.product-vote i.active {
+    color: #ffce3d;
+}
+
+.product-price {
+    margin: 12px 0;
+    background-color: #f5f5f5;
+    padding: 16px 24px;
+}
+
+.old-price {
+    font-size: 1.6rem;
+    color: #777;
+    text-decoration: line-through;
+    margin-right: 12px;
+}
+
+.current-price {
+    font-size: 2.6rem;
+    color: #ee4d2d;
+    margin-right: 16px;
+}
+
+.sale-off {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #d0011b;
+    border-radius: 2px;
+    padding: 2px;
+
+    position: relative;
+    top: -2px;
+    font-weight: 500;
+}
+
+.product-shipping {
+    display: flex;
+    margin: 20px 0;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.product-shipping-left span {
+    cursor: context-menu;
+}
+
+.product-shipping-right {
+    margin-left: 20px;
+}
+
+.product-shipping-right svg {
+    margin-right: 6px;
+}
+
+.product-shipping-right img {
+    margin-right: 6px;
+}
+
+.product-shipping-right span {
+    position: relative;
+    top: -2px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.product-quantity {
+    display: flex;
+    margin-left: 20px;
+    font-size: 1.4rem;
+}
+
+.product-quantity-label {
+    margin-right: 40px;
+    padding-top: 8px;
+}
+
+.product-action {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.product-action-add {
+    background-color: rgba(208, 1, 27, 0.08);
+    color: #d0011b;
+    border: 1px solid #d0011b;
+    margin-right: 12px;
+}
+
+.product-action-add i {
+    margin-right: 4px;
+}
+
+.product-action-btn {
+    padding: 12px;
+    height: 48px;
+    min-width: 180px;
+}
+
+.product-action-btn:hover {
+    opacity: 0.8;
+}
+
+.product-action-buy {
+    background-color: #d0011b;
+    color: #fff;
+    border: 1px solid #d0011b;
+}
