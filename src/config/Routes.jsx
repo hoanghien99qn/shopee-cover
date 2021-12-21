@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import Catalog from '../pages/Catalog'
 import AdminPage from '../pages/AdminPage'
@@ -26,7 +26,10 @@ const RouteRoute = () => {
                 exact
                 element={<Catalog />}
             />
-            <Redirect exact from="/shopee-cover" to="/home" />
+            <Route
+                path="/shopee-cover"
+                element={<Navigate to="/" />}
+            />
         </Routes>
     );
 }
