@@ -6,6 +6,7 @@ import { useGetProductQuery } from '../features/api/apiSlice'
 import Quantity from '../components/Quantity';
 import { cartAdded } from '../features/cart/cartSlice'
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function DetailProduct() {
     const match = useParams()
@@ -75,7 +76,9 @@ function DetailProduct() {
                                                 <i className="fas fa-cart-plus"></i>
                                                 Thêm Vào Giỏ Hàng
                                             </button>
-                                            <button className="btn product-action-btn product-action-buy">Mua Ngay</button>
+                                            <Link to="/cart">
+                                                <button className="btn product-action-btn product-action-buy" onClick={() => dispatch(cartAdded(item))}>Mua Ngay</button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
