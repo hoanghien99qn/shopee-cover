@@ -26,6 +26,7 @@ const RouteRoute = () => {
                 exact
                 element={<Catalog />}
             />
+            <Redirect exact from="/shopee-cover" to="/home" />
         </Routes>
     );
 }
