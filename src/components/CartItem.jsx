@@ -3,6 +3,7 @@ import Quantity from '../components/Quantity';
 import { deleteItem } from '../features/cart/cartSlice'
 import '../assets/css/CartPage.css'
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function CartItem(props) {
     const { item } = props
@@ -17,10 +18,12 @@ function CartItem(props) {
         <div className="cart-item">
             <div className="row sm-gutter">
                 <div className="col l-6 m-6 c-6">
-                    <div className="cart-item-left">
-                        <div className="cart-img" style={{ backgroundImage: `url("${item.image}")` }}></div>
-                        <div className="cart-name">{item.nameProduct}</div>
-                    </div>
+                    <Link to={`/detail/${item.id}`} className="cart-item-link">
+                        <div className="cart-item-left">
+                            <div className="cart-img" style={{ backgroundImage: `url("${item.image}")` }}></div>
+                            <div className="cart-name">{item.nameProduct}</div>
+                        </div>
+                    </Link>
                 </div>
                 <div className="col l-1-5 m-1-5 c-1-5">
                     <div className="center-align center">

@@ -70,6 +70,10 @@
     align-self: baseline;
 }
 
+.cart-item-link:hover .cart-name {
+    color: #555;
+}
+
 .cart-old-price {
     margin-right: 8px;
     text-decoration: line-through;
@@ -98,4 +102,16 @@
 
 .cart-total-buy:hover {
     opacity: 0.9;
+}
+
+.cart-list-message-error {
+    font-size: 1.6rem;
+    color: #ee4d2d;
+    padding: 12px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }

@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import '../assets/css/CartPage.css'
 import CartItem from '../components/CartItem';
+import { deleteAllItem } from '../features/cart/cartSlice'
+
+import DoneComponent from '../components/DoneComponent'
 
 function CartPage() {
+
+    const [isHideDone, setIsHideDone] = useState(true)
+    const [isErrorBuy, setIsErrorBuy] = useState(false)
+    const dispatch = useDispatch()
 
     const cartList = useSelector(state => state.cart)
 
@@ -12,6 +19,18 @@ function CartPage() {
 
     let totalPrice = cartList.reduce((acc, currentItem) => acc + priceItem(currentItem), 0)
     let totalPriceFormat = (totalPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
+
+    const handleBuyItem = () => {
+        if (cartList.length > 0) {
+            setIsHideDone(false)
+            setTimeout(() => {
+                setIsHideDone(true)
+                dispatch(deleteAllItem())
+            }, 2000);
+        } else {
+            setIsErrorBuy(true)
+        }
+    }
 
     return (
         <div>
@@ -38,6 +57,11 @@ function CartPage() {
                                 </div>
                             </div>
                         </div>
+                        <DoneComponent hide={isHideDone} />
+                        {
+                            isErrorBuy ? <div className="cart-list-message-error">Vui lòng thêm sản phẩm vào giỏ hàng!</div> : ""
+                        }
+
                         <div className="cart-list">
                             {
                                 cartList.map(item => <CartItem key={item.id} item={item} />)
@@ -54,7 +78,7 @@ function CartPage() {
                                         <span className="center cart-total-price">{totalPriceFormat}</span>
                                     </div>
                                     <div className="col l-1-5 m-1-5 c-1-5">
-                                        <span className="center cart-total-buy">Mua Hàng</span>
+                                        <span className="center cart-total-buy" onClick={handleBuyItem}>Mua Hàng</span>
                                     </div>
                                 </div>
                             </div>
