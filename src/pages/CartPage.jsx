@@ -15,7 +15,7 @@ function CartPage() {
 
     const cartList = useSelector(state => state.cart)
 
-    const priceItem = item => (item.price * ((100 - item.saleOff) / 100) * item.quantity)
+    const priceItem = item => (Math.round(item.price * ((100 - item.saleOff) / 100)) * item.quantity)
 
     let totalPrice = cartList.reduce((acc, currentItem) => acc + priceItem(currentItem), 0)
     let totalPriceFormat = (totalPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"

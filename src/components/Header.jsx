@@ -23,72 +23,72 @@ function Header(props) {
                             <div className="header__qr">
                                 <img src={qrCode} alt="qr code" className="header__qr-img" />
                                 <div className="header__qr-apps">
-                                    <a href="/" className="header__qr-apps-link"><img src={appleStore} alt="App Store" className="header__qr-apps-img" /></a>
-                                    <a href="/" className="header__qr-apps-link"><img src={googlePlay} alt="Google Play" className="header__qr-apps-img" /></a>
+                                    <Link to="/" className="header__qr-apps-link"><img src={appleStore} alt="App Store" className="header__qr-apps-img" /></Link>
+                                    <Link to="/" className="header__qr-apps-link"><img src={googlePlay} alt="Google Play" className="header__qr-apps-img" /></Link>
                                 </div>
                             </div>
                         </li>
                         <li className="header__navbar-item">
                             <span className="header__navbar-title--no-pointer">Kết nối</span>
-                            <a href="/" className="header__navbar-icon-link"><i className="fab fa-facebook header__navbar-icon" /></a>
-                            <a href="/" className="header__navbar-icon-link"><i className="fab fa-instagram header__navbar-icon" /></a>
+                            <Link to="/" className="header__navbar-icon-link"><i className="fab fa-facebook header__navbar-icon" /></Link>
+                            <Link to="/" className="header__navbar-icon-link"><i className="fab fa-instagram header__navbar-icon" /></Link>
                         </li>
                     </ul>
                     <ul className="header__navbar-list">
                         <li className="header__navbar-item header__navbar-item--has-notify">
-                            <a href="/" className="header__navbar-item-link">
+                            <Link to="/" className="header__navbar-item-link">
                                 <i className="far fa-bell header__navbar-icon" />
                                 Thông Báo
-                            </a>
+                            </Link>
                             <div className="header__notify">
                                 <header className="header__notify-header">
                                     <h3>Thông Báo Mới Nhận</h3>
                                 </header>
                                 <ul className="header__notify-list">
                                     <li className="header__notify-item">
-                                        <a href="/" className="header__notify-link">
+                                        <Link to="/" className="header__notify-link">
                                             <img src={logoShopee} alt="img" className="header__notify-img" />
                                             <div className="header__notify-info">
                                                 <span className="header__notify-name">Quét QR - Săn loạt sales chỉ 1Đ</span>
                                                 <span className="header__notify-description">Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa.</span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="header__notify-item">
-                                        <a href="/" className="header__notify-link">
+                                        <Link to="/" className="header__notify-link">
                                             <img src={shopeeHoanXu} alt="img" className="header__notify-img" />
                                             <div className="header__notify-info">
                                                 <span className="header__notify-name">Quét QR - Săn loạt sales chỉ 1Đ</span>
                                                 <span className="header__notify-description">Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa.</span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="header__notify-item">
-                                        <a href="/" className="header__notify-link">
+                                        <Link to="/" className="header__notify-link">
                                             <img src={shopeeFood} alt="img" className="header__notify-img" />
                                             <div className="header__notify-info">
                                                 <span className="header__notify-name">Quét QR - Săn loạt sales chỉ 1Đ</span>
                                                 <span className="header__notify-description">Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa. Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa. Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa.</span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="header__notify-item">
-                                        <a href="/" className="header__notify-link">
+                                        <Link to="/" className="header__notify-link">
                                             <img src={logoShopee} alt="img" className="header__notify-img" />
                                             <div className="header__notify-info">
                                                 <span className="header__notify-name">Quét QR - Săn loạt sales chỉ 1Đ</span>
                                                 <span className="header__notify-description">Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa.</span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="header__notify-item">
-                                        <a href="/" className="header__notify-link">
+                                        <Link to="/" className="header__notify-link">
                                             <img src={shopeeHoanXu} alt="img" className="header__notify-img" />
                                             <div className="header__notify-info">
                                                 <span className="header__notify-name">Quét QR - Săn loạt sales chỉ 1Đ</span>
                                                 <span className="header__notify-description">Phúc Long, MiniStop, Vựa Hải Sản Xanh, GS25, Thêm nhiều vocher khác nữa.</span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 <footer className="header__notify-footer">
@@ -97,10 +97,10 @@ function Header(props) {
                             </div>
                         </li>
                         <li className="header__navbar-item">
-                            <a href="/" className="header__navbar-item-link">
+                            <Link to="/" className="header__navbar-item-link">
                                 <i className="far fa-question-circle header__navbar-icon" />
                                 Hỗ Trợ
-                            </a>
+                            </Link>
                         </li>
                         <Link to={"/admin"} className="header__navbar-item header__navbar-item--register header__navbar-item--separate">
                             Admin
@@ -128,10 +128,10 @@ function Header(props) {
                                 <h3 className="header__search-history-heading">Lịch sử tìm kiếm</h3>
                                 <ul className="header__search-history-list">
                                     <li className="header__search-history-item">
-                                        <a href="/" className="header__search-history-link">Kem trộn</a>
+                                        <Link to="/" className="header__search-history-link">Kem trộn</Link>
                                     </li>
                                     <li className="header__search-history-item">
-                                        <a href="/" className="header__search-history-link">Bánh tráng</a>
+                                        <Link to="/" className="header__search-history-link">Bánh tráng</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -145,16 +145,16 @@ function Header(props) {
             </div>
             <ul className="header__sort-bar">
                 <li className="header__sort-item">
-                    <a href="/" className="header__sort-link header__sort-link--active">Phổ biến</a>
+                    <Link to="/" className="header__sort-link header__sort-link--active">Phổ biến</Link>
                 </li>
                 <li className="header__sort-item">
-                    <a href="/" className="header__sort-link">Mới nhất</a>
+                    <Link to="/" className="header__sort-link">Mới nhất</Link>
                 </li>
                 <li className="header__sort-item">
-                    <a href="/" className="header__sort-link">Bán chạy</a>
+                    <Link to="/" className="header__sort-link">Bán chạy</Link>
                 </li>
                 <li className="header__sort-item">
-                    <a href="/" className="header__sort-link">Giá</a>
+                    <Link to="/" className="header__sort-link">Giá</Link>
                 </li>
             </ul>
         </header>

@@ -18,7 +18,7 @@ function DetailProduct() {
     const dispatch = useDispatch()
 
     if (item) {
-        currentPrice = item && item.price ? item.price * ((100 - item.saleOff) / 100) : ''
+        currentPrice = item && item.price ? Math.round(item.price * ((100 - item.saleOff) / 100)) : ''
         currentPriceFormat = (currentPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
         oldPriceFormat = (item.price).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
     }

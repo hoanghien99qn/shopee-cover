@@ -45,8 +45,13 @@ function Quantity(props) {
     }
 
     const handleDecrease = () => {
-        setInputValue(inputValue - 1)
-        setQuantity(quantity - 1)
+        if (inputValue <= 1) {
+            setInputValue(1)
+            setQuantity(1)
+        } else {
+            setInputValue(inputValue - 1)
+            setQuantity(quantity - 1)
+        }
     }
 
     return (

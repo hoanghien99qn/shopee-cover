@@ -11,8 +11,10 @@ function HeaderCart() {
     return (
         <div className="header__cart">
             <div className="header__cart-wrap">
-                <i className="fas fa-shopping-cart header__cart-icon" />
-                <span className="header__cart-wrap-badge">{cartList.length}</span>
+                <Link to="/cart">
+                    <i className="fas fa-shopping-cart header__cart-icon" />
+                    <span className="header__cart-wrap-badge">{cartList.length}</span>
+                </Link>
                 {/* No cart: header__cart-list--no-cart */}
                 {/* Has cart: header__cart-list--has-cart */}
                 <div className={`header__cart-list ${cartList && cartList.length > 0 ? 'header__cart-list--has-cart' : 'header__cart-list--no-cart'}`}>

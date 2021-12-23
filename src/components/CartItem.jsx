@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function CartItem(props) {
     const { item } = props
     const dispatch = useDispatch()
-    let currentPrice = item.price * ((100 - item.saleOff) / 100)
+    let currentPrice = Math.round(item.price * ((100 - item.saleOff) / 100))
     let payPrice = currentPrice * item.quantity
     let currentPriceFormat = (currentPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
     let payPriceFormat = (payPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"

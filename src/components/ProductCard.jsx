@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function ProductCard(props) {
     const { item } = props
-    let currentPrice = item.price * ((100 - item.saleOff) / 100)
+    let currentPrice = Math.round(item.price * ((100 - item.saleOff) / 100))
     let currentPriceFormat = (currentPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
     let oldPriceFormat = (item.price).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + "đ"
 
