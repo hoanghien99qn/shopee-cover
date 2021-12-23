@@ -27,6 +27,11 @@
     .mobile-category {
         display: block;
     }
+
+    /* Cart Page */
+    .cart-page {
+        zoom: 0.5;
+    }
 }
 
 /* Tablet */
@@ -47,6 +52,11 @@
     }
     button.product-action-btn {
         min-width: 140px;
+    }
+
+    /* Cart Page */
+    .cart-page {
+        zoom: 0.5;
     }
 }
 
@@ -112,5 +122,10 @@
     }
     span.sale-off {
         display: none;
+    }
+
+    /* CartPage */
+    .cart-page {
+        zoom: 0.3;
     }
 }
