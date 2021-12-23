@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Category(props) {
     return (
@@ -6,16 +7,16 @@ function Category(props) {
             <h3 className="category__heading">DANH MỤC</h3>
             <ul className="category-list">
                 <li className="category-item">
-                    <a href="/" className="category-item__link category-item__link--active">Sản Phẩm</a>
+                    <Link to="/" className="category-item__link category-item__link--active">Sản Phẩm</Link>
                 </li>
                 <li className="category-item">
-                    <a href="/" className="category-item__link">Sản phẩm bán chạy</a>
+                    <Link to="/" className="category-item__link">Sản phẩm bán chạy</Link>
                 </li>
                 <li className="category-item">
-                    <a href="/" className="category-item__link">Sản phẩm mới</a>
+                    <Link to="/" className="category-item__link">Sản phẩm mới</Link>
                 </li>
                 <li className="category-item">
-                    <a href="/" className="category-item__link">iPhone</a>
+                    <Link to="/" className="category-item__link">iPhone</Link>
                 </li>
             </ul>
         </nav>
