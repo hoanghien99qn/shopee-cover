@@ -66,3 +66,14 @@
     opacity: 0.95;
     transform: scale(1.1);
 }
+
+@media (max-width: 1024px) {
+    .admin-page {
+        padding: 140px 0 48px 0;
+    }
+    .form-group input, #description, select {
+        margin-left: 0 !important;
+        min-width: 100% !important;
+    }
+
+}

@@ -12,8 +12,12 @@ const cartSlice = createSlice({
         cartAdded(state, action) {
             const canAdd = findItem(state, action.payload.id)
             if (canAdd === -1) {
-                let item = { ...action.payload, quantity: 1 }
+                let item = { ...action.payload }
                 state.push(item)
+                localStorage.setItem(CART_LIST_KEY, JSON.stringify(state))
+            } else {
+                let item = {...action.payload, quantity: state[canAdd].quantity + action.payload.quantity }
+                state[canAdd] = item
                 localStorage.setItem(CART_LIST_KEY, JSON.stringify(state))
             }
         },
