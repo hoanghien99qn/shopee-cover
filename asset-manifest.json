@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/shopee-cover/static/css/main.d85bc950.chunk.css",
-    "main.js": "/shopee-cover/static/js/main.a13097c8.chunk.js",
-    "main.js.map": "/shopee-cover/static/js/main.a13097c8.chunk.js.map",
-    "runtime-main.js": "/shopee-cover/static/js/runtime-main.3f9b6847.js",
-    "runtime-main.js.map": "/shopee-cover/static/js/runtime-main.3f9b6847.js.map",
-    "static/js/2.a2ac4feb.chunk.js": "/shopee-cover/static/js/2.a2ac4feb.chunk.js",
-    "static/js/2.a2ac4feb.chunk.js.map": "/shopee-cover/static/js/2.a2ac4feb.chunk.js.map",
-    "static/js/3.9165e10c.chunk.js": "/shopee-cover/static/js/3.9165e10c.chunk.js",
-    "static/js/3.9165e10c.chunk.js.map": "/shopee-cover/static/js/3.9165e10c.chunk.js.map",
+    "main.css": "/shopee-cover/static/css/main.3e5d3b39.chunk.css",
+    "main.js": "/shopee-cover/static/js/main.3b5d5aab.chunk.js",
+    "main.js.map": "/shopee-cover/static/js/main.3b5d5aab.chunk.js.map",
+    "runtime-main.js": "/shopee-cover/static/js/runtime-main.b45375ef.js",
+    "runtime-main.js.map": "/shopee-cover/static/js/runtime-main.b45375ef.js.map",
+    "static/css/2.013c2d33.chunk.css": "/shopee-cover/static/css/2.013c2d33.chunk.css",
+    "static/js/2.dfc36058.chunk.js": "/shopee-cover/static/js/2.dfc36058.chunk.js",
+    "static/js/2.dfc36058.chunk.js.map": "/shopee-cover/static/js/2.dfc36058.chunk.js.map",
+    "static/js/3.c1e538ba.chunk.js": "/shopee-cover/static/js/3.c1e538ba.chunk.js",
+    "static/js/3.c1e538ba.chunk.js.map": "/shopee-cover/static/js/3.c1e538ba.chunk.js.map",
     "index.html": "/shopee-cover/index.html",
-    "static/css/main.d85bc950.chunk.css.map": "/shopee-cover/static/css/main.d85bc950.chunk.css.map",
-    "static/js/2.a2ac4feb.chunk.js.LICENSE.txt": "/shopee-cover/static/js/2.a2ac4feb.chunk.js.LICENSE.txt",
+    "static/css/2.013c2d33.chunk.css.map": "/shopee-cover/static/css/2.013c2d33.chunk.css.map",
+    "static/css/main.3e5d3b39.chunk.css.map": "/shopee-cover/static/css/main.3e5d3b39.chunk.css.map",
+    "static/js/2.dfc36058.chunk.js.LICENSE.txt": "/shopee-cover/static/js/2.dfc36058.chunk.js.LICENSE.txt",
     "static/media/logo-shopee.c340ed15.jpg": "/shopee-cover/static/media/logo-shopee.c340ed15.jpg",
     "static/media/shopee-food.d2b0bf8d.png": "/shopee-cover/static/media/shopee-food.d2b0bf8d.png",
-    "static/media/shopee-hoan-xu.d6f1da2b.jpg": "/shopee-cover/static/media/shopee-hoan-xu.d6f1da2b.jpg"
+    "static/media/shopee-hoan-xu.d6f1da2b.jpg": "/shopee-cover/static/media/shopee-hoan-xu.d6f1da2b.jpg",
+    "static/media/slider_1.5dd14809.png": "/shopee-cover/static/media/slider_1.5dd14809.png",
+    "static/media/slider_2.008f263c.png": "/shopee-cover/static/media/slider_2.008f263c.png",
+    "static/media/slider_3.a6063b03.png": "/shopee-cover/static/media/slider_3.a6063b03.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3f9b6847.js",
-    "static/js/2.a2ac4feb.chunk.js",
-    "static/css/main.d85bc950.chunk.css",
-    "static/js/main.a13097c8.chunk.js"
+    "static/js/runtime-main.b45375ef.js",
+    "static/css/2.013c2d33.chunk.css",
+    "static/js/2.dfc36058.chunk.js",
+    "static/css/main.3e5d3b39.chunk.css",
+    "static/js/main.3b5d5aab.chunk.js"
   ]
 }
