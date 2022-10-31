@@ -8,8 +8,10 @@
 
 ### Lọc sản phẩm theo giá, ngày tạo,...
 
-Demo in [here](https://hoanghien99qn.github.io/shopee-cover/)\
-Image\
+### Demo tại [đây](https://hoanghien99qn.github.io/shopee-cover/)
+
+### Một số hình ảnh demo
+
 ![home](./src/assets/img/demo1.PNG)\
 ![detail](./src/assets/img/demo2.PNG)\
 ![cart](./src/assets/img/demo3.PNG)\
