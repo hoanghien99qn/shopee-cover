@@ -13,8 +13,8 @@ const RouteRoute = () => {
       <Route path="/detail/:collectionId/:id" element={<DetailProduct />} />
       <Route path="/admin" element={<AdminPage />} />
       <Route path="/cart" element={<CartPage />} />
-      <Route path="/" exact element={<Catalog />} />
-      <Route path="/shopee-cover" element={<Navigate to="/" />} />
+      <Route path="/shopee-cover" exact element={<Catalog />} />
+      <Route path="/" element={<Navigate to="/shopee-cover" />} />
       <Route path="/search/:searchTerm" element={<Search />} />
     </Routes>
   );

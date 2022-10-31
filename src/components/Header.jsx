@@ -120,7 +120,7 @@ function Header(props) {
                     </Link>
                   </li>
                   <li className="header__notify-item">
-                    <Link to="/" className="header__notify-link">
+                    <Link to="/shopee-cover" className="header__notify-link">
                       <img
                         src={logoShopee}
                         alt="img"

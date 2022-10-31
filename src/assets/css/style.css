@@ -1118,3 +1118,10 @@
 .section_slider img {
 	max-width: 100%;
 }
+
+.swiper-button-prev, .swiper-button-next {
+	color: #fff !important;
+}
+.swiper-pagination-bullet-active {
+	background-color: #fff !important;
+}
